@@ -6,3 +6,17 @@ Content-Type: application/json
   "email": "steve@yavi.com",
   "password": "123456"
 }
+### login sin conexion a BDD
+
+POST http://127.0.0.1:3000/auth/login
+Content-Type: application/json
+
+{
+    "name":"prueba2",
+    "email":"ste@s.com",
+    "password":"1234567"
+}
+
+### users
+GET http://127.0.0.1:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjoxLCJpYXQiOjE3ODIxMTA0MzYsImV4cCI6MTc4MjExMDQ5Nn0.nBYiMR3kFcSbTEcX9VWN-r7kl7kI7xV0D_85Y1Y1Ha4
